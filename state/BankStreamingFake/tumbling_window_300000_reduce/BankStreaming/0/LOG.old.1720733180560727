@@ -1,0 +1,625 @@
+2024/07/12-00:07:36.164469 3bec RocksDB version: 9.0.0
+2024/07/12-00:07:36.164631 3bec Compile date 2024-03-11 11:26:24
+2024/07/12-00:07:36.164689 3bec DB SUMMARY
+2024/07/12-00:07:36.164742 3bec Host name (Env):  ISAACK
+2024/07/12-00:07:36.164776 3bec DB Session ID:  9580RYQXE9RNVKGKUQ8Z
+2024/07/12-00:07:36.167456 3bec CURRENT file:  CURRENT
+2024/07/12-00:07:36.167524 3bec IDENTITY file:  IDENTITY
+2024/07/12-00:07:36.167765 3bec MANIFEST file:  MANIFEST-000017 size: 295 Bytes
+2024/07/12-00:07:36.167805 3bec SST files in D:\Projects\bank_kafka_streams\state\BankStreamingFake\tumbling_window_300000_reduce\BankStreaming\0 dir, Total Num: 0, files: 
+2024/07/12-00:07:36.167837 3bec Write Ahead Log file in D:\Projects\bank_kafka_streams\state\BankStreamingFake\tumbling_window_300000_reduce\BankStreaming\0: 000016.log size: 0 ; 
+2024/07/12-00:07:36.168178 3bec                         Options.error_if_exists: 0
+2024/07/12-00:07:36.168207 3bec                       Options.create_if_missing: 1
+2024/07/12-00:07:36.168218 3bec                         Options.paranoid_checks: 1
+2024/07/12-00:07:36.168227 3bec             Options.flush_verify_memtable_count: 1
+2024/07/12-00:07:36.168249 3bec          Options.compaction_verify_record_count: 1
+2024/07/12-00:07:36.168258 3bec                               Options.track_and_verify_wals_in_manifest: 0
+2024/07/12-00:07:36.168267 3bec        Options.verify_sst_unique_id_in_manifest: 1
+2024/07/12-00:07:36.168276 3bec                                     Options.env: 000001A8DFE0E910
+2024/07/12-00:07:36.168291 3bec                                      Options.fs: WinFS
+2024/07/12-00:07:36.168306 3bec                                Options.info_log: 000001A8E218F760
+2024/07/12-00:07:36.168329 3bec                Options.max_file_opening_threads: 16
+2024/07/12-00:07:36.168349 3bec                              Options.statistics: 0000000000000000
+2024/07/12-00:07:36.168367 3bec                               Options.use_fsync: 0
+2024/07/12-00:07:36.168381 3bec                       Options.max_log_file_size: 0
+2024/07/12-00:07:36.168395 3bec                  Options.max_manifest_file_size: 1073741824
+2024/07/12-00:07:36.168412 3bec                   Options.log_file_time_to_roll: 0
+2024/07/12-00:07:36.168430 3bec                       Options.keep_log_file_num: 1000
+2024/07/12-00:07:36.168457 3bec                    Options.recycle_log_file_num: 0
+2024/07/12-00:07:36.168478 3bec                         Options.allow_fallocate: 1
+2024/07/12-00:07:36.168498 3bec                        Options.allow_mmap_reads: 0
+2024/07/12-00:07:36.168512 3bec                       Options.allow_mmap_writes: 0
+2024/07/12-00:07:36.168525 3bec                        Options.use_direct_reads: 0
+2024/07/12-00:07:36.168539 3bec                        Options.use_direct_io_for_flush_and_compaction: 0
+2024/07/12-00:07:36.168553 3bec          Options.create_missing_column_families: 1
+2024/07/12-00:07:36.168570 3bec                              Options.db_log_dir: 
+2024/07/12-00:07:36.168597 3bec                                 Options.wal_dir: 
+2024/07/12-00:07:36.168610 3bec                Options.table_cache_numshardbits: 6
+2024/07/12-00:07:36.168619 3bec                         Options.WAL_ttl_seconds: 0
+2024/07/12-00:07:36.168628 3bec                       Options.WAL_size_limit_MB: 0
+2024/07/12-00:07:36.168637 3bec                        Options.max_write_batch_group_size_bytes: 1048576
+2024/07/12-00:07:36.168646 3bec             Options.manifest_preallocation_size: 4194304
+2024/07/12-00:07:36.168655 3bec                     Options.is_fd_close_on_exec: 1
+2024/07/12-00:07:36.168664 3bec                   Options.advise_random_on_open: 1
+2024/07/12-00:07:36.168673 3bec                    Options.db_write_buffer_size: 0
+2024/07/12-00:07:36.168682 3bec                    Options.write_buffer_manager: 000001A8E21CA8B0
+2024/07/12-00:07:36.168692 3bec           Options.random_access_max_buffer_size: 1048576
+2024/07/12-00:07:36.168701 3bec                      Options.use_adaptive_mutex: 0
+2024/07/12-00:07:36.168710 3bec                            Options.rate_limiter: 0000000000000000
+2024/07/12-00:07:36.168790 3bec     Options.sst_file_manager.rate_bytes_per_sec: 0
+2024/07/12-00:07:36.168805 3bec                       Options.wal_recovery_mode: 2
+2024/07/12-00:07:36.168814 3bec                  Options.enable_thread_tracking: 0
+2024/07/12-00:07:36.168823 3bec                  Options.enable_pipelined_write: 0
+2024/07/12-00:07:36.168832 3bec                  Options.unordered_write: 0
+2024/07/12-00:07:36.168840 3bec         Options.allow_concurrent_memtable_write: 1
+2024/07/12-00:07:36.168849 3bec      Options.enable_write_thread_adaptive_yield: 1
+2024/07/12-00:07:36.168858 3bec             Options.write_thread_max_yield_usec: 100
+2024/07/12-00:07:36.168867 3bec            Options.write_thread_slow_yield_usec: 3
+2024/07/12-00:07:36.168876 3bec                               Options.row_cache: None
+2024/07/12-00:07:36.168885 3bec                              Options.wal_filter: None
+2024/07/12-00:07:36.168894 3bec             Options.avoid_flush_during_recovery: 0
+2024/07/12-00:07:36.168903 3bec             Options.allow_ingest_behind: 0
+2024/07/12-00:07:36.168912 3bec             Options.two_write_queues: 0
+2024/07/12-00:07:36.168921 3bec             Options.manual_wal_flush: 0
+2024/07/12-00:07:36.168929 3bec             Options.wal_compression: 0
+2024/07/12-00:07:36.168938 3bec             Options.atomic_flush: 0
+2024/07/12-00:07:36.168947 3bec             Options.avoid_unnecessary_blocking_io: 0
+2024/07/12-00:07:36.168956 3bec                 Options.persist_stats_to_disk: 0
+2024/07/12-00:07:36.168965 3bec                 Options.write_dbid_to_manifest: 0
+2024/07/12-00:07:36.168974 3bec                 Options.log_readahead_size: 0
+2024/07/12-00:07:36.168983 3bec                 Options.file_checksum_gen_factory: Unknown
+2024/07/12-00:07:36.168992 3bec                 Options.best_efforts_recovery: 0
+2024/07/12-00:07:36.169001 3bec                Options.max_bgerror_resume_count: 2147483647
+2024/07/12-00:07:36.169010 3bec            Options.bgerror_resume_retry_interval: 1000000
+2024/07/12-00:07:36.169019 3bec             Options.allow_data_in_errors: 0
+2024/07/12-00:07:36.169028 3bec             Options.db_host_id: __hostname__
+2024/07/12-00:07:36.169037 3bec             Options.enforce_single_del_contracts: true
+2024/07/12-00:07:36.169047 3bec             Options.max_background_jobs: 2
+2024/07/12-00:07:36.169055 3bec             Options.max_background_compactions: -1
+2024/07/12-00:07:36.169064 3bec             Options.max_subcompactions: 1
+2024/07/12-00:07:36.169073 3bec             Options.avoid_flush_during_shutdown: 0
+2024/07/12-00:07:36.169082 3bec           Options.writable_file_max_buffer_size: 1048576
+2024/07/12-00:07:36.169091 3bec             Options.delayed_write_rate : 16777216
+2024/07/12-00:07:36.169100 3bec             Options.max_total_wal_size: 134217728
+2024/07/12-00:07:36.169109 3bec             Options.delete_obsolete_files_period_micros: 21600000000
+2024/07/12-00:07:36.169119 3bec                   Options.stats_dump_period_sec: 600
+2024/07/12-00:07:36.169128 3bec                 Options.stats_persist_period_sec: 600
+2024/07/12-00:07:36.169136 3bec                 Options.stats_history_buffer_size: 1048576
+2024/07/12-00:07:36.169146 3bec                          Options.max_open_files: -1
+2024/07/12-00:07:36.169155 3bec                          Options.bytes_per_sync: 0
+2024/07/12-00:07:36.169164 3bec                      Options.wal_bytes_per_sync: 0
+2024/07/12-00:07:36.169172 3bec                   Options.strict_bytes_per_sync: 0
+2024/07/12-00:07:36.169181 3bec       Options.compaction_readahead_size: 2097152
+2024/07/12-00:07:36.169190 3bec                  Options.max_background_flushes: -1
+2024/07/12-00:07:36.169199 3bec Options.daily_offpeak_time_utc: 
+2024/07/12-00:07:36.169208 3bec Compression algorithms supported:
+2024/07/12-00:07:36.169221 3bec 	kZSTD supported: 1
+2024/07/12-00:07:36.169242 3bec 	kSnappyCompression supported: 1
+2024/07/12-00:07:36.169252 3bec 	kBZip2Compression supported: 1
+2024/07/12-00:07:36.169261 3bec 	kZlibCompression supported: 1
+2024/07/12-00:07:36.169306 3bec 	kLZ4Compression supported: 1
+2024/07/12-00:07:36.169318 3bec 	kXpressCompression supported: 0
+2024/07/12-00:07:36.169327 3bec 	kLZ4HCCompression supported: 1
+2024/07/12-00:07:36.169336 3bec 	kZSTDNotFinalCompression supported: 1
+2024/07/12-00:07:36.169347 3bec Fast CRC32 supported: Not supported on x86
+2024/07/12-00:07:36.169357 3bec DMutex implementation: std::mutex
+2024/07/12-00:07:36.184004 3bec [db/version_set.cc:6028] Recovering from manifest file: D:\Projects\bank_kafka_streams\state\BankStreamingFake\tumbling_window_300000_reduce\BankStreaming\0/MANIFEST-000017
+2024/07/12-00:07:36.195455 3bec [db/column_family.cc:618] --------------- Options for column family [default]:
+2024/07/12-00:07:36.195486 3bec               Options.comparator: leveldb.BytewiseComparator
+2024/07/12-00:07:36.195497 3bec           Options.merge_operator: None
+2024/07/12-00:07:36.195507 3bec        Options.compaction_filter: None
+2024/07/12-00:07:36.195515 3bec        Options.compaction_filter_factory: None
+2024/07/12-00:07:36.195524 3bec  Options.sst_partitioner_factory: None
+2024/07/12-00:07:36.195533 3bec         Options.memtable_factory: SkipListFactory
+2024/07/12-00:07:36.195542 3bec            Options.table_factory: BlockBasedTable
+2024/07/12-00:07:36.195613 3bec            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (000001A8E219CD20)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  checksum: 4
+  no_block_cache: 0
+  block_cache: 000001A8E21CA140
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.500
+    low_pri_pool_ratio: 0.000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 6
+  enable_index_compression: 1
+  block_align: 0
+  max_auto_readahead_size: 262144
+  prepopulate_block_cache: 0
+  initial_auto_readahead_size: 8192
+  num_file_reads_for_auto_readahead: 2
+2024/07/12-00:07:36.195626 3bec        Options.write_buffer_size: 67108864
+2024/07/12-00:07:36.195636 3bec  Options.max_write_buffer_number: 3
+2024/07/12-00:07:36.195649 3bec          Options.compression: LZ4
+2024/07/12-00:07:36.195658 3bec                  Options.bottommost_compression: Disabled
+2024/07/12-00:07:36.195667 3bec       Options.prefix_extractor: nullptr
+2024/07/12-00:07:36.195676 3bec   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2024/07/12-00:07:36.195685 3bec             Options.num_levels: 7
+2024/07/12-00:07:36.195693 3bec        Options.min_write_buffer_number_to_merge: 1
+2024/07/12-00:07:36.195702 3bec     Options.max_write_buffer_number_to_maintain: 0
+2024/07/12-00:07:36.195711 3bec     Options.max_write_buffer_size_to_maintain: 0
+2024/07/12-00:07:36.195720 3bec            Options.bottommost_compression_opts.window_bits: -14
+2024/07/12-00:07:36.195730 3bec                  Options.bottommost_compression_opts.level: 32767
+2024/07/12-00:07:36.195739 3bec               Options.bottommost_compression_opts.strategy: 0
+2024/07/12-00:07:36.195747 3bec         Options.bottommost_compression_opts.max_dict_bytes: 0
+2024/07/12-00:07:36.195757 3bec         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2024/07/12-00:07:36.195766 3bec         Options.bottommost_compression_opts.parallel_threads: 1
+2024/07/12-00:07:36.195775 3bec                  Options.bottommost_compression_opts.enabled: false
+2024/07/12-00:07:36.195784 3bec         Options.bottommost_compression_opts.max_dict_buffer_bytes: 0
+2024/07/12-00:07:36.195798 3bec         Options.bottommost_compression_opts.use_zstd_dict_trainer: true
+2024/07/12-00:07:36.195811 3bec            Options.compression_opts.window_bits: -14
+2024/07/12-00:07:36.195820 3bec                  Options.compression_opts.level: 32767
+2024/07/12-00:07:36.195829 3bec               Options.compression_opts.strategy: 0
+2024/07/12-00:07:36.195838 3bec         Options.compression_opts.max_dict_bytes: 0
+2024/07/12-00:07:36.195847 3bec         Options.compression_opts.zstd_max_train_bytes: 0
+2024/07/12-00:07:36.195856 3bec         Options.compression_opts.use_zstd_dict_trainer: true
+2024/07/12-00:07:36.195865 3bec         Options.compression_opts.parallel_threads: 1
+2024/07/12-00:07:36.195873 3bec                  Options.compression_opts.enabled: false
+2024/07/12-00:07:36.195882 3bec         Options.compression_opts.max_dict_buffer_bytes: 0
+2024/07/12-00:07:36.195895 3bec      Options.level0_file_num_compaction_trigger: 4
+2024/07/12-00:07:36.195904 3bec          Options.level0_slowdown_writes_trigger: 20
+2024/07/12-00:07:36.195913 3bec              Options.level0_stop_writes_trigger: 36
+2024/07/12-00:07:36.195922 3bec                   Options.target_file_size_base: 67108864
+2024/07/12-00:07:36.195931 3bec             Options.target_file_size_multiplier: 1
+2024/07/12-00:07:36.195940 3bec                Options.max_bytes_for_level_base: 268435456
+2024/07/12-00:07:36.195949 3bec Options.level_compaction_dynamic_level_bytes: 1
+2024/07/12-00:07:36.195958 3bec          Options.max_bytes_for_level_multiplier: 10.000000
+2024/07/12-00:07:36.195968 3bec Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2024/07/12-00:07:36.195978 3bec Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2024/07/12-00:07:36.195987 3bec Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2024/07/12-00:07:36.195995 3bec Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2024/07/12-00:07:36.196004 3bec Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2024/07/12-00:07:36.196013 3bec Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2024/07/12-00:07:36.196022 3bec Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2024/07/12-00:07:36.196031 3bec       Options.max_sequential_skip_in_iterations: 8
+2024/07/12-00:07:36.196040 3bec                    Options.max_compaction_bytes: 1677721600
+2024/07/12-00:07:36.196049 3bec                        Options.arena_block_size: 1048576
+2024/07/12-00:07:36.196058 3bec   Options.soft_pending_compaction_bytes_limit: 68719476736
+2024/07/12-00:07:36.196067 3bec   Options.hard_pending_compaction_bytes_limit: 274877906944
+2024/07/12-00:07:36.196185 3bec                Options.disable_auto_compactions: 0
+2024/07/12-00:07:36.196212 3bec                        Options.compaction_style: kCompactionStyleLevel
+2024/07/12-00:07:36.196323 3bec                          Options.compaction_pri: kMinOverlappingRatio
+2024/07/12-00:07:36.196409 3bec Options.compaction_options_universal.size_ratio: 1
+2024/07/12-00:07:36.196430 3bec Options.compaction_options_universal.min_merge_width: 2
+2024/07/12-00:07:36.196445 3bec Options.compaction_options_universal.max_merge_width: 4294967295
+2024/07/12-00:07:36.196468 3bec Options.compaction_options_universal.max_size_amplification_percent: 200
+2024/07/12-00:07:36.196485 3bec Options.compaction_options_universal.compression_size_percent: -1
+2024/07/12-00:07:36.196503 3bec Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2024/07/12-00:07:36.196518 3bec Options.compaction_options_fifo.max_table_files_size: 1073741824
+2024/07/12-00:07:36.196534 3bec Options.compaction_options_fifo.allow_compaction: 0
+2024/07/12-00:07:36.196553 3bec                   Options.table_properties_collectors: 
+2024/07/12-00:07:36.196569 3bec                   Options.inplace_update_support: 0
+2024/07/12-00:07:36.196583 3bec                 Options.inplace_update_num_locks: 10000
+2024/07/12-00:07:36.196597 3bec               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2024/07/12-00:07:36.196614 3bec               Options.memtable_whole_key_filtering: 0
+2024/07/12-00:07:36.196844 3bec   Options.memtable_huge_page_size: 0
+2024/07/12-00:07:36.196912 3bec                           Options.bloom_locality: 0
+2024/07/12-00:07:36.196930 3bec                    Options.max_successive_merges: 0
+2024/07/12-00:07:36.197005 3bec                Options.optimize_filters_for_hits: 0
+2024/07/12-00:07:36.197030 3bec                Options.paranoid_file_checks: 0
+2024/07/12-00:07:36.197046 3bec                Options.force_consistency_checks: 1
+2024/07/12-00:07:36.197061 3bec                Options.report_bg_io_stats: 0
+2024/07/12-00:07:36.197075 3bec                               Options.ttl: 2592000
+2024/07/12-00:07:36.197089 3bec          Options.periodic_compaction_seconds: 0
+2024/07/12-00:07:36.197105 3bec                        Options.default_temperature: kUnknown
+2024/07/12-00:07:36.197121 3bec  Options.preclude_last_level_data_seconds: 0
+2024/07/12-00:07:36.197313 3bec    Options.preserve_internal_time_seconds: 0
+2024/07/12-00:07:36.197361 3bec                       Options.enable_blob_files: false
+2024/07/12-00:07:36.197382 3bec                           Options.min_blob_size: 0
+2024/07/12-00:07:36.197405 3bec                          Options.blob_file_size: 268435456
+2024/07/12-00:07:36.197430 3bec                   Options.blob_compression_type: NoCompression
+2024/07/12-00:07:36.197458 3bec          Options.enable_blob_garbage_collection: false
+2024/07/12-00:07:36.197490 3bec      Options.blob_garbage_collection_age_cutoff: 0.250000
+2024/07/12-00:07:36.197533 3bec Options.blob_garbage_collection_force_threshold: 1.000000
+2024/07/12-00:07:36.197700 3bec          Options.blob_compaction_readahead_size: 0
+2024/07/12-00:07:36.197728 3bec                Options.blob_file_starting_level: 0
+2024/07/12-00:07:36.197750 3bec         Options.experimental_mempurge_threshold: 0.000000
+2024/07/12-00:07:36.197772 3bec            Options.memtable_max_range_deletions: 0
+2024/07/12-00:07:36.198223 3bec [db/column_family.cc:618] --------------- Options for column family [__metadata__]:
+2024/07/12-00:07:36.198263 3bec               Options.comparator: leveldb.BytewiseComparator
+2024/07/12-00:07:36.198315 3bec           Options.merge_operator: None
+2024/07/12-00:07:36.198339 3bec        Options.compaction_filter: None
+2024/07/12-00:07:36.198372 3bec        Options.compaction_filter_factory: None
+2024/07/12-00:07:36.198388 3bec  Options.sst_partitioner_factory: None
+2024/07/12-00:07:36.198404 3bec         Options.memtable_factory: SkipListFactory
+2024/07/12-00:07:36.198418 3bec            Options.table_factory: BlockBasedTable
+2024/07/12-00:07:36.198552 3bec            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (000001A8E219B9A0)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  checksum: 4
+  no_block_cache: 0
+  block_cache: 000001A8E21CA140
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.500
+    low_pri_pool_ratio: 0.000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 6
+  enable_index_compression: 1
+  block_align: 0
+  max_auto_readahead_size: 262144
+  prepopulate_block_cache: 0
+  initial_auto_readahead_size: 8192
+  num_file_reads_for_auto_readahead: 2
+2024/07/12-00:07:36.198571 3bec        Options.write_buffer_size: 67108864
+2024/07/12-00:07:36.198581 3bec  Options.max_write_buffer_number: 3
+2024/07/12-00:07:36.198600 3bec          Options.compression: LZ4
+2024/07/12-00:07:36.198622 3bec                  Options.bottommost_compression: Disabled
+2024/07/12-00:07:36.198742 3bec       Options.prefix_extractor: nullptr
+2024/07/12-00:07:36.198760 3bec   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2024/07/12-00:07:36.198770 3bec             Options.num_levels: 7
+2024/07/12-00:07:36.198779 3bec        Options.min_write_buffer_number_to_merge: 1
+2024/07/12-00:07:36.198788 3bec     Options.max_write_buffer_number_to_maintain: 0
+2024/07/12-00:07:36.198797 3bec     Options.max_write_buffer_size_to_maintain: 0
+2024/07/12-00:07:36.198806 3bec            Options.bottommost_compression_opts.window_bits: -14
+2024/07/12-00:07:36.198815 3bec                  Options.bottommost_compression_opts.level: 32767
+2024/07/12-00:07:36.198824 3bec               Options.bottommost_compression_opts.strategy: 0
+2024/07/12-00:07:36.198833 3bec         Options.bottommost_compression_opts.max_dict_bytes: 0
+2024/07/12-00:07:36.198842 3bec         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2024/07/12-00:07:36.198851 3bec         Options.bottommost_compression_opts.parallel_threads: 1
+2024/07/12-00:07:36.198860 3bec                  Options.bottommost_compression_opts.enabled: false
+2024/07/12-00:07:36.198869 3bec         Options.bottommost_compression_opts.max_dict_buffer_bytes: 0
+2024/07/12-00:07:36.198878 3bec         Options.bottommost_compression_opts.use_zstd_dict_trainer: true
+2024/07/12-00:07:36.198888 3bec            Options.compression_opts.window_bits: -14
+2024/07/12-00:07:36.198897 3bec                  Options.compression_opts.level: 32767
+2024/07/12-00:07:36.198906 3bec               Options.compression_opts.strategy: 0
+2024/07/12-00:07:36.198914 3bec         Options.compression_opts.max_dict_bytes: 0
+2024/07/12-00:07:36.198923 3bec         Options.compression_opts.zstd_max_train_bytes: 0
+2024/07/12-00:07:36.198932 3bec         Options.compression_opts.use_zstd_dict_trainer: true
+2024/07/12-00:07:36.198941 3bec         Options.compression_opts.parallel_threads: 1
+2024/07/12-00:07:36.198950 3bec                  Options.compression_opts.enabled: false
+2024/07/12-00:07:36.198959 3bec         Options.compression_opts.max_dict_buffer_bytes: 0
+2024/07/12-00:07:36.198968 3bec      Options.level0_file_num_compaction_trigger: 4
+2024/07/12-00:07:36.198977 3bec          Options.level0_slowdown_writes_trigger: 20
+2024/07/12-00:07:36.198986 3bec              Options.level0_stop_writes_trigger: 36
+2024/07/12-00:07:36.198994 3bec                   Options.target_file_size_base: 67108864
+2024/07/12-00:07:36.199004 3bec             Options.target_file_size_multiplier: 1
+2024/07/12-00:07:36.199013 3bec                Options.max_bytes_for_level_base: 268435456
+2024/07/12-00:07:36.199022 3bec Options.level_compaction_dynamic_level_bytes: 1
+2024/07/12-00:07:36.199030 3bec          Options.max_bytes_for_level_multiplier: 10.000000
+2024/07/12-00:07:36.199042 3bec Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2024/07/12-00:07:36.199052 3bec Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2024/07/12-00:07:36.199061 3bec Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2024/07/12-00:07:36.199070 3bec Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2024/07/12-00:07:36.199079 3bec Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2024/07/12-00:07:36.199088 3bec Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2024/07/12-00:07:36.199096 3bec Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2024/07/12-00:07:36.199105 3bec       Options.max_sequential_skip_in_iterations: 8
+2024/07/12-00:07:36.199114 3bec                    Options.max_compaction_bytes: 1677721600
+2024/07/12-00:07:36.199123 3bec                        Options.arena_block_size: 1048576
+2024/07/12-00:07:36.199132 3bec   Options.soft_pending_compaction_bytes_limit: 68719476736
+2024/07/12-00:07:36.199142 3bec   Options.hard_pending_compaction_bytes_limit: 274877906944
+2024/07/12-00:07:36.199151 3bec                Options.disable_auto_compactions: 0
+2024/07/12-00:07:36.199161 3bec                        Options.compaction_style: kCompactionStyleLevel
+2024/07/12-00:07:36.199171 3bec                          Options.compaction_pri: kMinOverlappingRatio
+2024/07/12-00:07:36.199183 3bec Options.compaction_options_universal.size_ratio: 1
+2024/07/12-00:07:36.199194 3bec Options.compaction_options_universal.min_merge_width: 2
+2024/07/12-00:07:36.199203 3bec Options.compaction_options_universal.max_merge_width: 4294967295
+2024/07/12-00:07:36.199212 3bec Options.compaction_options_universal.max_size_amplification_percent: 200
+2024/07/12-00:07:36.199221 3bec Options.compaction_options_universal.compression_size_percent: -1
+2024/07/12-00:07:36.199251 3bec Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2024/07/12-00:07:36.199262 3bec Options.compaction_options_fifo.max_table_files_size: 1073741824
+2024/07/12-00:07:36.199271 3bec Options.compaction_options_fifo.allow_compaction: 0
+2024/07/12-00:07:36.199285 3bec                   Options.table_properties_collectors: 
+2024/07/12-00:07:36.199294 3bec                   Options.inplace_update_support: 0
+2024/07/12-00:07:36.199303 3bec                 Options.inplace_update_num_locks: 10000
+2024/07/12-00:07:36.199312 3bec               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2024/07/12-00:07:36.199322 3bec               Options.memtable_whole_key_filtering: 0
+2024/07/12-00:07:36.199331 3bec   Options.memtable_huge_page_size: 0
+2024/07/12-00:07:36.199339 3bec                           Options.bloom_locality: 0
+2024/07/12-00:07:36.199348 3bec                    Options.max_successive_merges: 0
+2024/07/12-00:07:36.199357 3bec                Options.optimize_filters_for_hits: 0
+2024/07/12-00:07:36.199366 3bec                Options.paranoid_file_checks: 0
+2024/07/12-00:07:36.199374 3bec                Options.force_consistency_checks: 1
+2024/07/12-00:07:36.199383 3bec                Options.report_bg_io_stats: 0
+2024/07/12-00:07:36.199392 3bec                               Options.ttl: 2592000
+2024/07/12-00:07:36.199401 3bec          Options.periodic_compaction_seconds: 0
+2024/07/12-00:07:36.199410 3bec                        Options.default_temperature: kUnknown
+2024/07/12-00:07:36.199419 3bec  Options.preclude_last_level_data_seconds: 0
+2024/07/12-00:07:36.199428 3bec    Options.preserve_internal_time_seconds: 0
+2024/07/12-00:07:36.199436 3bec                       Options.enable_blob_files: false
+2024/07/12-00:07:36.199445 3bec                           Options.min_blob_size: 0
+2024/07/12-00:07:36.199454 3bec                          Options.blob_file_size: 268435456
+2024/07/12-00:07:36.199463 3bec                   Options.blob_compression_type: NoCompression
+2024/07/12-00:07:36.199472 3bec          Options.enable_blob_garbage_collection: false
+2024/07/12-00:07:36.199481 3bec      Options.blob_garbage_collection_age_cutoff: 0.250000
+2024/07/12-00:07:36.199491 3bec Options.blob_garbage_collection_force_threshold: 1.000000
+2024/07/12-00:07:36.199501 3bec          Options.blob_compaction_readahead_size: 0
+2024/07/12-00:07:36.199510 3bec                Options.blob_file_starting_level: 0
+2024/07/12-00:07:36.199518 3bec         Options.experimental_mempurge_threshold: 0.000000
+2024/07/12-00:07:36.199527 3bec            Options.memtable_max_range_deletions: 0
+2024/07/12-00:07:36.199709 3bec [db/column_family.cc:618] --------------- Options for column family [__expiration-index__]:
+2024/07/12-00:07:36.199725 3bec               Options.comparator: leveldb.BytewiseComparator
+2024/07/12-00:07:36.199734 3bec           Options.merge_operator: None
+2024/07/12-00:07:36.199743 3bec        Options.compaction_filter: None
+2024/07/12-00:07:36.199751 3bec        Options.compaction_filter_factory: None
+2024/07/12-00:07:36.199760 3bec  Options.sst_partitioner_factory: None
+2024/07/12-00:07:36.199769 3bec         Options.memtable_factory: SkipListFactory
+2024/07/12-00:07:36.199778 3bec            Options.table_factory: BlockBasedTable
+2024/07/12-00:07:36.199854 3bec            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (000001A8E219C200)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  checksum: 4
+  no_block_cache: 0
+  block_cache: 000001A8E21CA140
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.500
+    low_pri_pool_ratio: 0.000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 6
+  enable_index_compression: 1
+  block_align: 0
+  max_auto_readahead_size: 262144
+  prepopulate_block_cache: 0
+  initial_auto_readahead_size: 8192
+  num_file_reads_for_auto_readahead: 2
+2024/07/12-00:07:36.199870 3bec        Options.write_buffer_size: 67108864
+2024/07/12-00:07:36.199882 3bec  Options.max_write_buffer_number: 3
+2024/07/12-00:07:36.199891 3bec          Options.compression: LZ4
+2024/07/12-00:07:36.199900 3bec                  Options.bottommost_compression: Disabled
+2024/07/12-00:07:36.199909 3bec       Options.prefix_extractor: nullptr
+2024/07/12-00:07:36.199917 3bec   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2024/07/12-00:07:36.199926 3bec             Options.num_levels: 7
+2024/07/12-00:07:36.199934 3bec        Options.min_write_buffer_number_to_merge: 1
+2024/07/12-00:07:36.199943 3bec     Options.max_write_buffer_number_to_maintain: 0
+2024/07/12-00:07:36.199952 3bec     Options.max_write_buffer_size_to_maintain: 0
+2024/07/12-00:07:36.199961 3bec            Options.bottommost_compression_opts.window_bits: -14
+2024/07/12-00:07:36.199970 3bec                  Options.bottommost_compression_opts.level: 32767
+2024/07/12-00:07:36.199979 3bec               Options.bottommost_compression_opts.strategy: 0
+2024/07/12-00:07:36.199988 3bec         Options.bottommost_compression_opts.max_dict_bytes: 0
+2024/07/12-00:07:36.199997 3bec         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2024/07/12-00:07:36.200005 3bec         Options.bottommost_compression_opts.parallel_threads: 1
+2024/07/12-00:07:36.200014 3bec                  Options.bottommost_compression_opts.enabled: false
+2024/07/12-00:07:36.200023 3bec         Options.bottommost_compression_opts.max_dict_buffer_bytes: 0
+2024/07/12-00:07:36.200032 3bec         Options.bottommost_compression_opts.use_zstd_dict_trainer: true
+2024/07/12-00:07:36.200041 3bec            Options.compression_opts.window_bits: -14
+2024/07/12-00:07:36.200050 3bec                  Options.compression_opts.level: 32767
+2024/07/12-00:07:36.200059 3bec               Options.compression_opts.strategy: 0
+2024/07/12-00:07:36.200067 3bec         Options.compression_opts.max_dict_bytes: 0
+2024/07/12-00:07:36.200076 3bec         Options.compression_opts.zstd_max_train_bytes: 0
+2024/07/12-00:07:36.200085 3bec         Options.compression_opts.use_zstd_dict_trainer: true
+2024/07/12-00:07:36.200094 3bec         Options.compression_opts.parallel_threads: 1
+2024/07/12-00:07:36.200103 3bec                  Options.compression_opts.enabled: false
+2024/07/12-00:07:36.200111 3bec         Options.compression_opts.max_dict_buffer_bytes: 0
+2024/07/12-00:07:36.200120 3bec      Options.level0_file_num_compaction_trigger: 4
+2024/07/12-00:07:36.200129 3bec          Options.level0_slowdown_writes_trigger: 20
+2024/07/12-00:07:36.200138 3bec              Options.level0_stop_writes_trigger: 36
+2024/07/12-00:07:36.200146 3bec                   Options.target_file_size_base: 67108864
+2024/07/12-00:07:36.200155 3bec             Options.target_file_size_multiplier: 1
+2024/07/12-00:07:36.200164 3bec                Options.max_bytes_for_level_base: 268435456
+2024/07/12-00:07:36.200173 3bec Options.level_compaction_dynamic_level_bytes: 1
+2024/07/12-00:07:36.200182 3bec          Options.max_bytes_for_level_multiplier: 10.000000
+2024/07/12-00:07:36.200194 3bec Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2024/07/12-00:07:36.200204 3bec Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2024/07/12-00:07:36.200213 3bec Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2024/07/12-00:07:36.200222 3bec Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2024/07/12-00:07:36.200240 3bec Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2024/07/12-00:07:36.200251 3bec Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2024/07/12-00:07:36.200259 3bec Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2024/07/12-00:07:36.200268 3bec       Options.max_sequential_skip_in_iterations: 8
+2024/07/12-00:07:36.200277 3bec                    Options.max_compaction_bytes: 1677721600
+2024/07/12-00:07:36.200286 3bec                        Options.arena_block_size: 1048576
+2024/07/12-00:07:36.200295 3bec   Options.soft_pending_compaction_bytes_limit: 68719476736
+2024/07/12-00:07:36.200304 3bec   Options.hard_pending_compaction_bytes_limit: 274877906944
+2024/07/12-00:07:36.200313 3bec                Options.disable_auto_compactions: 0
+2024/07/12-00:07:36.200323 3bec                        Options.compaction_style: kCompactionStyleLevel
+2024/07/12-00:07:36.200332 3bec                          Options.compaction_pri: kMinOverlappingRatio
+2024/07/12-00:07:36.200341 3bec Options.compaction_options_universal.size_ratio: 1
+2024/07/12-00:07:36.200350 3bec Options.compaction_options_universal.min_merge_width: 2
+2024/07/12-00:07:36.200359 3bec Options.compaction_options_universal.max_merge_width: 4294967295
+2024/07/12-00:07:36.200368 3bec Options.compaction_options_universal.max_size_amplification_percent: 200
+2024/07/12-00:07:36.200377 3bec Options.compaction_options_universal.compression_size_percent: -1
+2024/07/12-00:07:36.200386 3bec Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2024/07/12-00:07:36.200395 3bec Options.compaction_options_fifo.max_table_files_size: 1073741824
+2024/07/12-00:07:36.200404 3bec Options.compaction_options_fifo.allow_compaction: 0
+2024/07/12-00:07:36.200415 3bec                   Options.table_properties_collectors: 
+2024/07/12-00:07:36.200423 3bec                   Options.inplace_update_support: 0
+2024/07/12-00:07:36.200432 3bec                 Options.inplace_update_num_locks: 10000
+2024/07/12-00:07:36.200441 3bec               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2024/07/12-00:07:36.200451 3bec               Options.memtable_whole_key_filtering: 0
+2024/07/12-00:07:36.200460 3bec   Options.memtable_huge_page_size: 0
+2024/07/12-00:07:36.200468 3bec                           Options.bloom_locality: 0
+2024/07/12-00:07:36.200477 3bec                    Options.max_successive_merges: 0
+2024/07/12-00:07:36.200486 3bec                Options.optimize_filters_for_hits: 0
+2024/07/12-00:07:36.200494 3bec                Options.paranoid_file_checks: 0
+2024/07/12-00:07:36.200503 3bec                Options.force_consistency_checks: 1
+2024/07/12-00:07:36.200512 3bec                Options.report_bg_io_stats: 0
+2024/07/12-00:07:36.200520 3bec                               Options.ttl: 2592000
+2024/07/12-00:07:36.200529 3bec          Options.periodic_compaction_seconds: 0
+2024/07/12-00:07:36.200538 3bec                        Options.default_temperature: kUnknown
+2024/07/12-00:07:36.200547 3bec  Options.preclude_last_level_data_seconds: 0
+2024/07/12-00:07:36.200556 3bec    Options.preserve_internal_time_seconds: 0
+2024/07/12-00:07:36.200565 3bec                       Options.enable_blob_files: false
+2024/07/12-00:07:36.200573 3bec                           Options.min_blob_size: 0
+2024/07/12-00:07:36.200582 3bec                          Options.blob_file_size: 268435456
+2024/07/12-00:07:36.200591 3bec                   Options.blob_compression_type: NoCompression
+2024/07/12-00:07:36.200600 3bec          Options.enable_blob_garbage_collection: false
+2024/07/12-00:07:36.200609 3bec      Options.blob_garbage_collection_age_cutoff: 0.250000
+2024/07/12-00:07:36.200621 3bec Options.blob_garbage_collection_force_threshold: 1.000000
+2024/07/12-00:07:36.200632 3bec          Options.blob_compaction_readahead_size: 0
+2024/07/12-00:07:36.200641 3bec                Options.blob_file_starting_level: 0
+2024/07/12-00:07:36.200650 3bec         Options.experimental_mempurge_threshold: 0.000000
+2024/07/12-00:07:36.200659 3bec            Options.memtable_max_range_deletions: 0
+2024/07/12-00:07:36.209542 3bec [db/version_set.cc:6079] Recovered from manifest file:D:\Projects\bank_kafka_streams\state\BankStreamingFake\tumbling_window_300000_reduce\BankStreaming\0/MANIFEST-000017 succeeded,manifest_file_number is 17, next_file_number is 19, last_sequence is 0, log_number is 13,prev_log_number is 0,max_column_family is 2,min_log_number_to_keep is 13
+2024/07/12-00:07:36.209569 3bec [db/version_set.cc:6088] Column family [default] (ID 0), log number is 13
+2024/07/12-00:07:36.209580 3bec [db/version_set.cc:6088] Column family [__metadata__] (ID 1), log number is 13
+2024/07/12-00:07:36.209589 3bec [db/version_set.cc:6088] Column family [__expiration-index__] (ID 2), log number is 13
+2024/07/12-00:07:36.210350 3bec [db/db_impl/db_impl_open.cc:652] DB ID: 66dfdac3-3fc7-11ef-a809-8c16455f6667
+2024/07/12-00:07:36.214931 3bec EVENT_LOG_v1 {"time_micros": 1720732056214845, "job": 1, "event": "recovery_started", "wal_files": [16]}
+2024/07/12-00:07:36.214957 3bec [db/db_impl/db_impl_open.cc:1158] Recovering log #16 mode 2
+2024/07/12-00:07:36.218672 3bec EVENT_LOG_v1 {"time_micros": 1720732056218650, "job": 1, "event": "recovery_finished"}
+2024/07/12-00:07:36.219797 3bec [db/version_set.cc:5521] Creating manifest 21
+2024/07/12-00:07:36.273436 3bec [file/delete_scheduler.cc:77] Deleted file D:\Projects\bank_kafka_streams\state\BankStreamingFake\tumbling_window_300000_reduce\BankStreaming\0/000016.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2024/07/12-00:07:36.274033 3bec [db/db_impl/db_impl_open.cc:2181] SstFileManager instance 000001A8E0BFDCC0
+2024/07/12-00:07:36.276500 3bec DB pointer 000001A8E222DAC0
+2024/07/12-00:07:36.276807 3bec [db/db_impl/db_impl_compaction_flush.cc:1977] [__metadata__] Manual flush start.
+2024/07/12-00:07:36.276871 3bec [db/db_impl/db_impl_compaction_flush.cc:1988] [__metadata__] Manual flush finished, status: OK
+2024/07/12-00:07:36.278521 3368 [db/db_impl/db_impl.cc:1166] ------- DUMPING STATS -------
+2024/07/12-00:07:36.278567 3368 [db/db_impl/db_impl.cc:1167] 
+** DB Stats **
+Uptime(secs): 0.1 total, 0.1 interval
+Cumulative writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+Write Stall (count): write-buffer-manager-limit-stops: 0
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sum      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 0.1 total, 0.1 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Estimated pending compaction bytes: 0
+Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0
+Block cache LRUCache@000001A8E21CA140#15120 capacity: 8.00 MB seed: 1371472462 usage: 0.08 KB table_size: 256 occupancy: 1 collections: 1 last_copies: 2 last_secs: 6.2e-05 secs_since: 0
+Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+
+** Compaction Stats [__metadata__] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sum      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [__metadata__] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 0.1 total, 0.1 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Estimated pending compaction bytes: 0
+Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0
+Block cache LRUCache@000001A8E21CA140#15120 capacity: 8.00 MB seed: 1371472462 usage: 0.08 KB table_size: 256 occupancy: 1 collections: 1 last_copies: 2 last_secs: 6.2e-05 secs_since: 0
+Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [__metadata__] **
+
+** Compaction Stats [__expiration-index__] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sum      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [__expiration-index__] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 0.1 total, 0.1 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Estimated pending compaction bytes: 0
+Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0
+Block cache LRUCache@000001A8E21CA140#15120 capacity: 8.00 MB seed: 1371472462 usage: 0.08 KB table_size: 256 occupancy: 1 collections: 1 last_copies: 2 last_secs: 6.2e-05 secs_since: 0
+Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [__expiration-index__] **
+2024/07/12-00:07:37.276767 3bec [db/db_impl/db_impl_compaction_flush.cc:1977] [__metadata__] Manual flush start.
+2024/07/12-00:07:37.277193 3bec [db/db_impl/db_impl_compaction_flush.cc:1988] [__metadata__] Manual flush finished, status: OK
+2024/07/12-00:07:37.277309 3bec [db/db_impl/db_impl_compaction_flush.cc:1977] [__expiration-index__] Manual flush start.
+2024/07/12-00:07:37.277348 3bec [db/db_impl/db_impl_compaction_flush.cc:1988] [__expiration-index__] Manual flush finished, status: OK
+2024/07/12-00:07:37.277375 3bec [db/db_impl/db_impl_compaction_flush.cc:1977] [default] Manual flush start.
+2024/07/12-00:07:37.277392 3bec [db/db_impl/db_impl_compaction_flush.cc:1988] [default] Manual flush finished, status: OK
+2024/07/12-00:07:37.287686 3bec [db/db_impl/db_impl_compaction_flush.cc:1977] [default] Manual flush start.
+2024/07/12-00:07:37.287764 3bec [db/db_impl/db_impl_compaction_flush.cc:1988] [default] Manual flush finished, status: OK
+2024/07/12-00:07:37.287803 3bec [db/db_impl/db_impl.cc:488] Shutdown: canceling all background work
+2024/07/12-00:07:37.288257 3bec [db/db_impl/db_impl.cc:488] Shutdown: canceling all background work
+2024/07/12-00:07:37.297778 3bec [db/db_impl/db_impl.cc:681] Shutdown complete

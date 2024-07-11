@@ -24,7 +24,8 @@ def datasimulator():
             'cardType': card_type,
             'type_transaction': transaction_type
         }
-        yield transaction
+        
+        yield json.dumps(transaction)
         start_date += increement 
         time.sleep(1)
         
@@ -35,14 +36,14 @@ def main():
         loglevel="DEBUG",
         auto_offset_reset="earliest"
     )
-            
+        
     with app.get_producer() as producer:
-        for transactions in datasimulator():
-            datagenerator = transactions
+        for transactions_json in datasimulator():
+            data = json.loads(transactions_json)
             producer.produce(
-                topic="BankStreaming",
+                topic=("BankStreaming"),
                 key="BankTransactions",
-                value=json.dumps(datagenerator)
+                value=json.dumps(data)
             )
             time.sleep(1)
         
