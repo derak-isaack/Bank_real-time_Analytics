@@ -1,9 +1,9 @@
-CREATE DATABASE Minute_batches;
-use DATABASE Minute_batches;
-CREATE TABLE ohlc(
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    open_transaction FLOAT,
-    high_transaction FLOAT,
-    low_transaction FLOAT,
-    close_transaction FLOAT,
-)
+CREATE TABLE IF NOT EXISTS transaction_summary (
+                start BIGINT NOT NULL,
+                end BIGINT NOT NULL,
+                open_transaction FLOAT NOT NULL,
+                high_transaction FLOAT NOT NULL,
+                low_transaction FLOAT NOT NULL,
+                close_transaction FLOAT NOT NULL,
+                PRIMARY KEY (start, end)
+            );
