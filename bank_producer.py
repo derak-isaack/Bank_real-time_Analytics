@@ -3,47 +3,58 @@ from quixstreams import Application
 import numpy as np  
 import time, json  
 from datetime import date, timedelta, datetime
+from mimesis import Field, Schema
+from mimesis.enums import Gender
+from mimesis.locales import Locale
 
 
-def datasimulator():
+#Define a function to generate data in json formart for easier analysis. 
+def generate_bank_transactions(start_date=None):
+    field = Field(Locale.EN, seed=0xff)
     fake = Faker()
-    start_date = datetime.now()
-    increement = timedelta(milliseconds=100)
-    
-    while True:
-        transaction_type = fake.random_element(elements=('deposit', 'withdraw'))
-        card_type = fake.random_element(elements=('Classic visa', 'Gold mastercard', 'Platinum visa', 
-                                                  'Gold visa', 'Visa signature','World elite','Infinite credit'))
-        transaction = {
-            'tranDate': fake.date_time_this_year().strftime('%Y-%m-%d %H:%M:%S'),
-            'tranCode': fake.swift8(),
-            'custName': fake.name(),
-            'cardNum': fake.credit_card_number(),
-            'zipcode': fake.zipcode(),
-            'transAmount': int(np.random.randint(100, 1000000)),
-            'cardType': card_type,
-            'type_transaction': transaction_type
-        }
-        
-        yield json.dumps(transaction)
-        start_date += increement 
-        time.sleep(1)
-        
 
+    if start_date is None:
+        start_date = datetime.now()
+
+    current_date = start_date
+
+    schema_definition = lambda: {
+        "pk": field("increment"),
+        "tranDate": current_date.isoformat(),
+        "tranCode": fake.swift8(),
+        "custName": field("full_name"),
+        "cardNum": field("credit_card_number"),
+        "zipcode": field("zip_code"),
+        "transAmount": field("float_number", start=1.0, end=1000000.0, precision=2),
+        "cardType": field("choice", items=['Classic visa', 'Gold mastercard', 'Platinum visa', 
+                                                  'Gold visa', 'Visa signature','World elite','Infinite credit']),
+        "type_transaction": field("choice", items=["purchase", "refund", "withdrawal"]),
+    }
+
+    while True:
+        schema = Schema(schema=schema_definition)
+        transaction = schema.create() 
+        json_transaction = json.dumps(transaction, indent=4)  
+        yield json_transaction
+        current_date += timedelta(seconds=1) 
+        time.sleep(2)
+
+#Define main application to stream data
 def main():
     app = Application(
         broker_address="localhost:9092",
         loglevel="DEBUG",
-        auto_offset_reset="earliest"
+        auto_offset_reset="latest",
+        consumer_group="BankStreamingFake"
     )
         
     with app.get_producer() as producer:
-        for transactions_json in datasimulator():
+        for transactions_json in generate_bank_transactions():
             data = json.loads(transactions_json)
             producer.produce(
                 topic=("BankStreaming"),
                 key="BankTransactions",
-                value=json.dumps(data)
+                value=json.dumps(data).encode("utf-8")    
             )
             time.sleep(1)
         
