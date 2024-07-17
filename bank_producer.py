@@ -1,7 +1,7 @@
 from faker import Faker
 from quixstreams import Application
 import numpy as np  
-import time, json  
+import time, json, pytz  
 from datetime import date, timedelta, datetime
 from mimesis import Field, Schema
 from mimesis.enums import Gender
@@ -12,11 +12,13 @@ from mimesis.locales import Locale
 def generate_bank_transactions(start_date=None):
     field = Field(Locale.EN, seed=0xff)
     fake = Faker()
+    
+    east_african_time = pytz.timezone('Africa/Nairobi')
 
     if start_date is None:
-        start_date = datetime.now()
+        start_date = datetime.utcnow()
 
-    current_date = start_date
+    current_date = pytz.utc.localize(start_date).astimezone(east_african_time)
 
     schema_definition = lambda: {
         "pk": field("increment"),
